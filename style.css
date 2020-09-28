@@ -1,65 +1,105 @@
-head{
-	font:Raleway;
+body {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-#logo{
-	width:100px;
-	height:auto;
+header {
+  max-width: 90%;
 }
-.navigation{
-	display:flex;
-	justify-content:space-between;
-	align-items:center;
+main {
+  max-width: 90%;
 }
-nav ul{
-	display:flex;
-	list-style:none;
+#logo {
+  width: 100px;
+  height: auto;
 }
-nav ul li{
-	margin-right:20px;
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin-right: 20px;
 }
 /*What is better to use this "nav ul li" reference or give it a class?*/
-.navbar a:link{
-  text-decoration:none;
+.navbar a:link {
+  text-decoration: none;
 }
-.navbar a:visited{
-  color: #0065FC;
+.navbar a:visited {
+  color: #0065fc;
 }
-.navbar a:hover{
-  color: #DEEBFF;
-  border-top:2px solid #0065FC;
-  padding-top:20px;
+.navbar a:hover {
+  color: #deebff;
+  border-top: 2px solid #0065fc;
+  padding-top: 20px;
 }
-.navbar a:active{
-  color: #0065FC;
+.navbar a:active {
+  color: #0065fc;
 }
 /*I seem to not be able to find the right colors for the links*/
 
-.acc-panel{
-	background:gray;
-	border-radius:20px;
-	width:70%;
+main {
+  flex-grow: 1;
 }
-.acc-container{
-	display:flex;
-	flex-direction:row;
-	justify-content:space-evenly;
-	flex-wrap:wrap;
-	align-items:space-evenly;
-	height:450px;
+#accommodations {
+  padding-left: 45px;
+  padding-top: 25px;
 }
-.acc-card{
-	background:white;
-	border-radius:20px;
-	flex-basis:26%;
-	height:45%;
+.acc-panel {
+  background: gray;
+  border-radius: 20px;
+  width: 70%;
 }
-.acc-image{
-	object-fit:cover;
-	width:95%;
-	height:60%;
-	border-radius:20px 20px 0px 0px;
-	padding:5px; /*if the object-fit is on "cover", shouldn't be the padding the same around the image?*/
+.acc-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: space-evenly;
+  height: 450px;
 }
-.acc-text{
-	line-height:0.4;
+.acc-card {
+  background: white;
+  border-radius: 20px;
+  flex-basis: 26%;
+  height: 45%;
+}
+.acc-image {
+  object-fit: cover;
+  width: 95%;
+  height: 60%;
+  border-radius: 20px 20px 0px 0px;
+  padding: 5px; /*if the object-fit is on "cover", shouldn't be the padding the same around the image?*/
+}
+.acc-text {
+  line-height: 0.4;
+}
+#showmore {
+  padding-bottom: 25px;
+  padding-left: 45px;
+}
+
+/*------------FOOTER---------------*/
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: gray;
+  line-height: 2.5;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer a {
+  text-decoration: none;
+}
+.footer-column {
+  width: 20%;
 }
