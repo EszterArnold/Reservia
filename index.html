@@ -6,10 +6,14 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/df7cb65ce3.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="navigation">
+    <header class="navigation container">
       <a href="#"><img id="logo" src="images/logo.png" /></a>
       <nav class="navbar">
         <ul>
@@ -19,71 +23,203 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <section>
-        <p>Find a place for your dream vacation</p>
+        <h1>Find a place for your dream vacation</h1>
         <p>Dowtown or in nature</p>
         <!--SEARCHBAR HERE-->
         <!--FILTERS HERE-->
         <p>Filters</p>
         <p>
-          <!--info sign-->More than 500 accommodations are available in this
+          <i class="fas fa-info-circle"></i>
+          More than 500 accommodations are available in this
           <br />city
         </p>
       </section>
-      <div class="acc-panel">
-        <h2 id="accommodations">Accommodations in Marseilles</h2>
-        <div class="acc-container">
-          <div class="acc-card">
-            <!--action cards have to be clickable in their entirity-->
-            <img class="acc-image" src="images/cannebiere.jpg" />
-            <h3 class="acc-text">Auberge la Cannebiere</h3>
-            <p class="acc-text">Night starting at 25</p>
+      <div class="main-panels">
+        <div class="acc-panel">
+          <h2 id="accommodations">Accommodations in Marseilles</h2>
+          <div class="acc-container">
+            <div class="acc-card">
+              <!--action cards have to be clickable in their entirity-->
+              <img class="acc-image" src="images/cannebiere.jpg" />
+              <h3 class="acc-text">Auberge la Cannebiere</h3>
+              <p class="acc-text">Night starting at <strong>25€</strong></p>
+              <p class="stars">
+                <span style="color: #0065fc">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </span>
+                <span style="color: grey">
+                  <i class="fas fa-star"></i>
+                </span>
+              </p>
+            </div>
+            <div class="acc-card">
+              <img class="acc-image" src="images/hotelduport.jpg" />
+              <h3 class="acc-text">Hotel du port</h3>
+              <p class="acc-text">Night starting at <strong>52€</strong></p>
+              <p class="stars">
+                <span style="color: #0065fc">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </span>
+              </p>
+            </div>
+            <div class="acc-card">
+              <img class="acc-image" src="images/lesmouettes.jpg" />
+              <h3 class="acc-text">Les mouettes Hotel</h3>
+              <p class="acc-text">Night starting at <strong>76€</strong></p>
+              <p class="stars">
+                <span style="color: #0065fc">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i> </span
+                ><span style="color: gray">
+                  <i class="fas fa-star"></i>
+                </span>
+              </p>
+            </div>
+            <div class="acc-card">
+              <img class="acc-image" src="images/hoteldelamer.jpg" />
+              <h3 class="acc-text">Hotel de la mer</h3>
+              <p class="acc-text">Night starting at <strong>46€</strong></p>
+              <p class="stars">
+                <span style="color: #0065fc">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i> </span
+                ><span style="color: gray">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </span>
+              </p>
+            </div>
+            <div class="acc-card">
+              <img class="acc-image" src="images/lepanier.jpg" />
+              <h3 class="acc-text">Auberge Le Panier</h3>
+              <p class="acc-text">Night starting at <strong>23€</strong></p>
+              <p class="stars">
+                <span style="color: #0065fc">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </span>
+                <span style="color: gray">
+                  <i class="fas fa-star"></i>
+                </span>
+              </p>
+            </div>
+            <div class="acc-card">
+              <img class="acc-image" src="images/amina.jpg" />
+              <h3 class="acc-text">Hotel chez Amina</h3>
+              <p class="acc-text">Night starting at <strong>96€</strong></p>
+              <p class="stars">
+                <span style="color: #0065fc">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </span>
+              </p>
+            </div>
           </div>
-          <div class="acc-card">
-            <img class="acc-image" src="images/hotelduport.jpg" />
-          </div>
-          <div class="acc-card">
-            <img class="acc-image" src="images/lesmouettes.jpg" />
-          </div>
-          <div class="acc-card">
-            <img class="acc-image" src="images/hoteldelamer.jpg" />
-          </div>
-          <div class="acc-card">
-            <img class="acc-image" src="images/lepanier.jpg" />
-          </div>
-          <div class="acc-card">
-            <img class="acc-image" src="images/amina.jpg" />
-          </div>
+          <h2 id="showmore"><a href="#">Show more</a></h2>
         </div>
-        <h2 id="showmore"><a href="#">Show more</a></h2>
+        <aside class="sidebar">
+          <h2 id="mostpopular">
+            Most popular <i class="fas fa-chart-line"></i>
+          </h2>
+          <!--DIAGRAM ICON-->
+          <div class="sidebar-container">
+            <div class="sidebar-card">
+              <img class="sidebar-image" src="images/morningsun.jpg" />
+              <div class="sidebar-text">
+                <h3>Morning Sun Hotel</h3>
+                <p>Night starting at <strong>128€</strong></p>
+                <p class="stars">
+                  <span style="color: #0065fc">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="sidebar-card">
+              <img class="sidebar-image" src="images/aucoeur.jpg" />
+              <div class="sidebar-text">
+                <h3>Au coeur de l'eau Bed and Breakfast</h3>
+                <p>Night starting at <strong>71€</strong></p>
+                <p class="stars">
+                  <span style="color: #0065fc">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span style="color: gray">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="sidebar-card">
+              <img class="sidebar-image" src="images/toutbleu.jpg" />
+              <div class="sidebar-text">
+                <h3>Tout bleu et Blanc Hotel</h3>
+                <p>Night starting at <strong>68€</strong></p>
+                <p class="stars">
+                  <span style="color: #0065fc">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span style="color: gray">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </aside>
       </div>
+      <!--ACT-PANEL COMES HERE-->
     </main>
-    <div class="footer">
-      <footer>
-        <div class="footer-column">
-          <h3>About</h3>
-          <ul>
-            <li><a href="#">Site Map</a></li>
-            <li><a href="#">General Terms and Conditions</a></li>
-            <li><a href="#">Data and Privacy</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Our Accommodations</h3>
-          <ul>
-            <li><a href="#">Quality Assesment</a></li>
-            <li><a href="#">You have a hotel?</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Assistance</h3>
-          <ul>
-            <li><a href="#">Help Desk</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-      </footer>
-    </div>
+    <footer class="footer">
+      <div class="footer-column">
+        <h3>About</h3>
+        <ul>
+          <li><a href="#">Site Map</a></li>
+          <li><a href="#">General Terms and Conditions</a></li>
+          <li><a href="#">Data and Privacy</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Our Accommodations</h3>
+        <ul>
+          <li><a href="#">Quality Assesment</a></li>
+          <li><a href="#">You have a hotel?</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Assistance</h3>
+        <ul>
+          <li><a href="#">Help Desk</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,14 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: 0;
+  background: url("./images/screenshot.png") center top no-repeat;
 }
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*--------HEADER------------------*/
 header {
-  max-width: 90%;
+  margin: 40px auto;
 }
 main {
-  max-width: 90%;
 }
 #logo {
   width: 100px;
@@ -53,7 +68,7 @@ main {
 .acc-panel {
   background: gray;
   border-radius: 20px;
-  width: 70%;
+  width: 880px;
 }
 .acc-container {
   display: flex;
@@ -78,24 +93,85 @@ main {
 }
 .acc-text {
   line-height: 0.4;
+  font-size: smaller;
+  padding-left: 10px;
+}
+.stars {
+  padding-left: 0;
 }
 #showmore {
   padding-bottom: 25px;
   padding-left: 45px;
 }
 
-/*------------FOOTER---------------*/
-footer {
+/*-------------------SIDEBAR--------------------*/
+.main-panels {
+  display: flex;
+  justify-content: space-evenly;
+}
+.sidebar {
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 20px;
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar h2 {
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-card {
   display: flex;
   flex-direction: row;
-  background-color: gray;
+  background-color: white;
+  border-radius: 20px;
+  flex-basis: 50%; /*<---------Why doesn't this one do anything?*/
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.sidebar-card img {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px 0px 0px 20px;
+  padding: 3px;
+}
+.sidebar-text {
+  font-size: 12px;
+  padding: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-card h3 {
+  font-size: 14px;
+  margin: 0;
+}
+.sidebar-card p {
+  font-size: 12px;
+  margin: 0;
+}
+
+/*------------FOOTER---------------*/
+footer {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  background-color: #f0f0f0;
   line-height: 2.5;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 footer ul {
   list-style: none;
-  padding-left: 0;
+  padding-left: -0;
 }
 footer a {
   text-decoration: none;
