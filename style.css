@@ -10,13 +10,22 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  background: url("./images/screenshot.png") center top no-repeat;
+  background: url("./images/screenshot.pn") center top no-repeat;
 }
 
 .container {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
+}
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 14px;
+}
+a:link {
+  text-decoration: none;
 }
 
 /*--------HEADER------------------*/
@@ -41,10 +50,6 @@ nav ul {
 nav ul li {
   margin-right: 20px;
 }
-/*What is better to use this "nav ul li" reference or give it a class?*/
-.navbar a:link {
-  text-decoration: none;
-}
 .navbar a:visited {
   color: #0065fc;
 }
@@ -61,13 +66,17 @@ nav ul li {
 main {
   flex-grow: 1;
 }
+.rounded-corner {
+  border-radius: 20px;
+}
+.gray-bg {
+  background-color: #f2f2f2;
+}
 #accommodations {
-  padding-left: 45px;
+  padding-left: 40px;
   padding-top: 25px;
 }
 .acc-panel {
-  background: gray;
-  border-radius: 20px;
   width: 880px;
 }
 .acc-container {
@@ -80,28 +89,33 @@ main {
 }
 .acc-card {
   background: white;
-  border-radius: 20px;
-  flex-basis: 26%;
-  height: 45%;
+  width: 245px;
+  height: 200px;
+}
+.acc-card p {
+  font-size: 12px;
 }
 .acc-image {
   object-fit: cover;
-  width: 95%;
-  height: 60%;
+  width: 245px;
+  height: 115px;
   border-radius: 20px 20px 0px 0px;
-  padding: 5px; /*if the object-fit is on "cover", shouldn't be the padding the same around the image?*/
+  padding: 5px;
 }
 .acc-text {
   line-height: 0.4;
   font-size: smaller;
   padding-left: 10px;
 }
-.stars {
+.stars-sidebar {
   padding-left: 0;
+}
+.stars-acc {
+  padding-left: 10px;
 }
 #showmore {
   padding-bottom: 25px;
-  padding-left: 45px;
+  padding-left: 40px;
 }
 
 /*-------------------SIDEBAR--------------------*/
@@ -110,8 +124,6 @@ main {
   justify-content: space-evenly;
 }
 .sidebar {
-  background-color: #f0f0f0;
-  border-radius: 20px;
   padding: 20px;
   width: 420px;
   display: flex;
@@ -129,7 +141,6 @@ main {
   display: flex;
   flex-direction: row;
   background-color: white;
-  border-radius: 20px;
   flex-basis: 50%; /*<---------Why doesn't this one do anything?*/
   margin-bottom: 20px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -139,7 +150,7 @@ main {
   width: 100px;
   height: 100px;
   border-radius: 20px 0px 0px 20px;
-  padding: 3px;
+  padding: 5px;
 }
 .sidebar-text {
   font-size: 12px;
@@ -151,12 +162,72 @@ main {
 }
 
 .sidebar-card h3 {
-  font-size: 14px;
   margin: 0;
 }
 .sidebar-card p {
   font-size: 12px;
   margin: 0;
+}
+/*------------ACT-PANEL------------*/
+.act-panel {
+  margin-top: 60px;
+}
+.act-container {
+  display: flex;
+  flex-direction: row;
+}
+.act-item {
+  height: 100 px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-basis: 25%;
+  object-fit: cover;
+  max-height: 85%;
+  max-width: 25%;
+}
+.act-card {
+  width: 300px;
+  height: 450px;
+  margin-right: 40px;
+}
+.act-card h3 {
+  margin-left: 20px;
+}
+.act-card img {
+  object-fit: cover;
+  width: 300px;
+  border-radius: 20px 20px 0px 0px;
+}
+#oldport img,
+#calanques img {
+  height: 400px;
+}
+#pomegues {
+  height: 240px;
+  margin-bottom: 50px;
+}
+#pomegues img {
+  height: 180px;
+}
+#frioul {
+  height: 160px;
+}
+#frioul img {
+  height: 115px;
+}
+#notredame,
+#longchamp {
+  height: 200px;
+}
+#notredame {
+  margin-bottom: 50px;
+}
+#notredame img {
+  height: 140px;
+}
+#longchamp img {
+  height: 150px;
 }
 
 /*------------FOOTER---------------*/
@@ -164,7 +235,7 @@ footer {
   margin-top: 80px;
   display: flex;
   flex-direction: row;
-  background-color: #f0f0f0;
+  background-color: #f2f2f2;
   line-height: 2.5;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -172,9 +243,6 @@ footer {
 footer ul {
   list-style: none;
   padding-left: -0;
-}
-footer a {
-  text-decoration: none;
 }
 .footer-column {
   width: 20%;

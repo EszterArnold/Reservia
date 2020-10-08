@@ -37,15 +37,15 @@
         </p>
       </section>
       <div class="main-panels">
-        <div class="acc-panel">
+        <div class="acc-panel rounded-corner gray-bg">
           <h2 id="accommodations">Accommodations in Marseilles</h2>
           <div class="acc-container">
-            <div class="acc-card">
+            <div class="acc-card rounded-corner">
               <!--action cards have to be clickable in their entirity-->
               <img class="acc-image" src="images/cannebiere.jpg" />
               <h3 class="acc-text">Auberge la Cannebiere</h3>
               <p class="acc-text">Night starting at <strong>25€</strong></p>
-              <p class="stars">
+              <p class="stars-acc">
                 <span style="color: #0065fc">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -57,11 +57,11 @@
                 </span>
               </p>
             </div>
-            <div class="acc-card">
+            <div class="acc-card rounded-corner">
               <img class="acc-image" src="images/hotelduport.jpg" />
               <h3 class="acc-text">Hotel du port</h3>
               <p class="acc-text">Night starting at <strong>52€</strong></p>
-              <p class="stars">
+              <p class="stars-acc">
                 <span style="color: #0065fc">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -71,11 +71,11 @@
                 </span>
               </p>
             </div>
-            <div class="acc-card">
+            <div class="acc-card rounded-corner">
               <img class="acc-image" src="images/lesmouettes.jpg" />
               <h3 class="acc-text">Les mouettes Hotel</h3>
               <p class="acc-text">Night starting at <strong>76€</strong></p>
-              <p class="stars">
+              <p class="stars-acc">
                 <span style="color: #0065fc">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -86,11 +86,11 @@
                 </span>
               </p>
             </div>
-            <div class="acc-card">
+            <div class="acc-card rounded-corner">
               <img class="acc-image" src="images/hoteldelamer.jpg" />
               <h3 class="acc-text">Hotel de la mer</h3>
               <p class="acc-text">Night starting at <strong>46€</strong></p>
-              <p class="stars">
+              <p class="stars-acc">
                 <span style="color: #0065fc">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -101,11 +101,11 @@
                 </span>
               </p>
             </div>
-            <div class="acc-card">
+            <div class="acc-card rounded-corner">
               <img class="acc-image" src="images/lepanier.jpg" />
               <h3 class="acc-text">Auberge Le Panier</h3>
               <p class="acc-text">Night starting at <strong>23€</strong></p>
-              <p class="stars">
+              <p class="stars-acc">
                 <span style="color: #0065fc">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -117,11 +117,11 @@
                 </span>
               </p>
             </div>
-            <div class="acc-card">
+            <div class="acc-card rounded-corner">
               <img class="acc-image" src="images/amina.jpg" />
               <h3 class="acc-text">Hotel chez Amina</h3>
               <p class="acc-text">Night starting at <strong>96€</strong></p>
-              <p class="stars">
+              <p class="stars-acc">
                 <span style="color: #0065fc">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -134,18 +134,18 @@
           </div>
           <h2 id="showmore"><a href="#">Show more</a></h2>
         </div>
-        <aside class="sidebar">
+        <aside class="sidebar rounded-corner gray-bg">
           <h2 id="mostpopular">
             Most popular <i class="fas fa-chart-line"></i>
           </h2>
           <!--DIAGRAM ICON-->
-          <div class="sidebar-container">
-            <div class="sidebar-card">
+          <div class="sidebar-container rounded-corner">
+            <div class="sidebar-card rounded-corner">
               <img class="sidebar-image" src="images/morningsun.jpg" />
               <div class="sidebar-text">
                 <h3>Morning Sun Hotel</h3>
                 <p>Night starting at <strong>128€</strong></p>
-                <p class="stars">
+                <p class="stars-sidebar">
                   <span style="color: #0065fc">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -156,12 +156,12 @@
                 </p>
               </div>
             </div>
-            <div class="sidebar-card">
+            <div class="sidebar-card rounded-corner">
               <img class="sidebar-image" src="images/aucoeur.jpg" />
               <div class="sidebar-text">
                 <h3>Au coeur de l'eau Bed and Breakfast</h3>
                 <p>Night starting at <strong>71€</strong></p>
-                <p class="stars">
+                <p class="stars-siebar">
                   <span style="color: #0065fc">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -174,12 +174,12 @@
                 </p>
               </div>
             </div>
-            <div class="sidebar-card">
+            <div class="sidebar-card rounded-corner">
               <img class="sidebar-image" src="images/toutbleu.jpg" />
               <div class="sidebar-text">
                 <h3>Tout bleu et Blanc Hotel</h3>
                 <p>Night starting at <strong>68€</strong></p>
-                <p class="stars">
+                <p class="stars-sidebar">
                   <span style="color: #0065fc">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -195,7 +195,39 @@
           </div>
         </aside>
       </div>
-      <!--ACT-PANEL COMES HERE-->
+      <section class="act-panel">
+        <h2 id="activities">Activities in Marseille</h2>
+        <div class="act-container">
+          <div class="act-card rounded-corner gray-bg" id="oldport">
+            <img src="images/oldport.jpg" />
+            <h3>Old Port</h3>
+          </div>
+          <div class="act-card">
+            <div class="act-double rounded-corner gray-bg" id="pomegues">
+              <img src="images/pomegues.jpg" />
+              <h3>Pomegues Fort</h3>
+            </div>
+            <div class="act-double rounded-corner gray-bg" id="frioul">
+              <img src="images/frioul.jpg" />
+              <h3>Frioul Island</h3>
+            </div>
+          </div>
+          <div class="act-card rounded-corner gray-bg" id="calanques">
+            <img src="images/calanques.jpg" />
+            <h3>Calanques National Park</h3>
+          </div>
+          <div class="act-card">
+            <div class="act-double rounded-corner gray-bg" id="notredame">
+              <img src="images/notredame.jpg" />
+              <h3>Notre-Dame-de-la-Garde</h3>
+            </div>
+            <div class="act-double rounded-corner gray-bg" id="longchamp">
+              <img src="images/longchamp.jpg" />
+              <h3>Longchamp Park</h3>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer-column">
