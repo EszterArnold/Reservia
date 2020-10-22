@@ -10,16 +10,26 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  background: url("./images/screenshot.pn") center top no-repeat;
+  background: url("./images/desktop.pn") center top no-repeat;
+}
+
+.done {
+  background: #fff;
+}
+
+* {
+  /* opacity: 0.5; */
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1340px;
   width: 100%;
   margin: 0 auto;
 }
+
 h2 {
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: 700;
 }
 h3 {
   font-size: 14px;
@@ -34,7 +44,10 @@ header {
 }
 main {
 }
-#logo {
+.logo {
+  margin-top: 27px;
+}
+.logo img {
   width: 100px;
   height: auto;
 }
@@ -46,72 +59,204 @@ main {
 nav ul {
   display: flex;
   list-style: none;
+  margin: 0;
 }
 nav ul li {
   margin-right: 20px;
 }
-.navbar a:visited {
+.navbar a {
+  color: #000;
+  padding: 45px 25px;
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+}
+.navbar a.active {
+  border-top: 2px solid #0065fc;
   color: #0065fc;
 }
 .navbar a:hover {
-  color: #deebff;
-  border-top: 2px solid #0065fc;
-  padding-top: 20px;
-}
-.navbar a:active {
   color: #0065fc;
 }
+.navbar li:last-child a {
+  color: #0065fc;
+  font-weight: 900;
+}
 /*I seem to not be able to find the right colors for the links*/
-
+/*-----------BODY------------------*/
 main {
   flex-grow: 1;
 }
 .rounded-corner {
   border-radius: 20px;
 }
-.gray-bg {
+.gray-b {
   background-color: #f2f2f2;
 }
+.top-part h2 {
+  margin-left: 5px;
+  margin-bottom: 0px;
+}
+.top-part p:first-of-type {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+/*----------SEARCH-BAR------------------*/
+.search-bar {
+  display: flex;
+  height: 50px;
+  width: 380px;
+  margin-bottom: 30px;
+}
+.search-bar text {
+  font-size: 16px;
+}
+.location {
+  height: 50px;
+  width: 50px;
+  background-color: #f2f2f2;
+  border-radius: 20px 0 0 20px;
+}
+.location i {
+  font-size: 17px;
+  display: block;
+  line-height: 50px;
+  text-align: center;
+}
+.search-field {
+  width: 235px;
+}
+input {
+  width: 235px;
+  height: 50px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  border-width: 0px;
+  padding-left: 10px;
+  border-top: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  border-image: none;
+}
+::placeholder {
+  color: black;
+}
+:focus {
+  outline: none;
+}
+.search {
+  width: 95px;
+  background-color: #0065fc;
+  border-radius: 0 20px 20px 0;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-weight: 700;
+}
+/*--------------FILTERS----------------*/
+.filters {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+.filters p {
+  font-size: 18px;
+  font-weight: 900;
+  margin-right: 20px;
+}
+
+.filter {
+  display: flex;
+  line-height: 50px;
+  width: 160px;
+  text-align: center;
+  border: solid 3px #f2f2f2;
+  border-radius: 30px;
+  border-left-color: #0065fc;
+}
+.icon {
+  background-color: #deebff;
+  color: #0065fc;
+  border-radius: 50%;
+  width: 50px;
+}
+.icon i {
+  font-size: 20px;
+}
+.text {
+  width: 110px;
+  font-weight: 700;
+}
+
+/*--------------CARD------------------------*/
+/*----------ACC-PANEL-------------------*/
+.card {
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  overflow: hidden;
+  border: 6px solid #fff;
+}
+
+.card img {
+  width: 100px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-body h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.card-body p {
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+.stars {
+  color: #0065fc;
+  margin-bottom: 5px;
+}
+.stars i:last-child {
+  color: #ccc;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.columns .card {
+  flex-direction: column;
+  flex-basis: 30%;
+}
+.columns .card img {
+  width: 100%;
+  height: 120px;
+}
+
+.columns .card-body {
+  margin: 10px;
+}
+
 #accommodations {
   padding-left: 40px;
   padding-top: 25px;
 }
 .acc-panel {
   width: 880px;
-}
-.acc-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: space-evenly;
-  height: 450px;
-}
-.acc-card {
-  background: white;
-  width: 245px;
-  height: 200px;
-}
-.acc-card p {
-  font-size: 12px;
-}
-.acc-image {
-  object-fit: cover;
-  width: 245px;
-  height: 115px;
-  border-radius: 20px 20px 0px 0px;
-  padding: 5px;
-}
-.acc-text {
-  line-height: 0.4;
-  font-size: smaller;
-  padding-left: 10px;
-}
-.stars-sidebar {
-  padding-left: 0;
-}
-.stars-acc {
-  padding-left: 10px;
 }
 #showmore {
   padding-bottom: 25px;
@@ -121,7 +266,7 @@ main {
 /*-------------------SIDEBAR--------------------*/
 .main-panels {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .sidebar {
   padding: 20px;
@@ -132,42 +277,12 @@ main {
 .sidebar h2 {
   display: flex;
   justify-content: space-between;
+  margin-left: 18px;
 }
-.sidebar-container {
-  display: flex;
-  flex-direction: column;
-}
-.sidebar-card {
-  display: flex;
-  flex-direction: row;
-  background-color: white;
-  flex-basis: 50%; /*<---------Why doesn't this one do anything?*/
-  margin-bottom: 20px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-.sidebar-card img {
-  object-fit: cover;
-  width: 100px;
-  height: 100px;
-  border-radius: 20px 0px 0px 20px;
-  padding: 5px;
-}
-.sidebar-text {
-  font-size: 12px;
-  padding: 10px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.sidebar .card {
+  height: 150px;
 }
 
-.sidebar-card h3 {
-  margin: 0;
-}
-.sidebar-card p {
-  font-size: 12px;
-  margin: 0;
-}
 /*------------ACT-PANEL------------*/
 .act-panel {
   margin-top: 60px;
@@ -176,7 +291,48 @@ main {
   display: flex;
   flex-direction: row;
 }
-.act-item {
+.act-container .card {
+  width: 300px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+.act-container .card img {
+  object-fit: cover;
+  width: 300px;
+  border-radius: 20px 20px 0px 0px;
+  height: 400px;
+}
+.act-container .card-body {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.act-columns {
+  display: flex;
+  flex-direction: column;
+}
+.act-columns .card:first-child {
+  height: 230px;
+  margin-bottom: 50px;
+}
+.act-columns .card:first-child img {
+  height: 180px;
+}
+.act-columns .card:last-child {
+  height: 170px;
+}
+.act-columns .card:last-child img {
+  height: 115px;
+}
+.act-columns .card:first-child {
+  height: 200px;
+  margin-bottom: 50px;
+}
+2nd .act-columns .card:first-child img {
+  height: 140px;
+}
+
+/*.act-item {
   height: 100 px;
   display: flex;
   flex-direction: column;
@@ -228,7 +384,7 @@ main {
 }
 #longchamp img {
   height: 150px;
-}
+}*/
 
 /*------------FOOTER---------------*/
 footer {
@@ -246,4 +402,13 @@ footer ul {
 }
 .footer-column {
   width: 20%;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    max-width: 375px;
+    min-height: 4550px;
+    background: url("./images/mobile.png") center top no-repeat;
+  }
 }
